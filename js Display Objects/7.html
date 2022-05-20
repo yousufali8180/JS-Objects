@@ -1,0 +1,21 @@
+<!-- Stringify Functions -->
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>JavaScript Objects</h2>
+<p>JSON.stringify will not stringify functions:</p>
+
+<p id="demo"></p>
+
+<script>
+const person = {
+  name: "John",
+  age: function () {return 30;}
+};
+
+document.getElementById("demo").innerHTML = JSON.stringify(person);
+</script>
+
+</body>
+</html>

@@ -1,0 +1,27 @@
+<!-- Map.keys() -->
+<!DOCTYPE html>
+<html>
+<body>
+<h2>JavaScript Map Objects</h2>
+<p>Using Map.keys():</p>
+
+<p id="demo"></p>
+
+<script>
+// Create a Map
+const fruits = new Map([
+  ["apples", 500],
+  ["bananas", 300],
+  ["oranges", 200]
+]);
+
+let veggies = "";
+for (const x of fruits.keys()) {
+  veggies += x + "<br>";
+}
+
+document.getElementById("demo").innerHTML = veggies;
+</script>
+
+</body>
+</html>
